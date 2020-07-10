@@ -1,0 +1,25 @@
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+    <div id="app">
+        <header-view></header-view>
+        <router-view></router-view>
+        <footer-view></footer-view>
+    </div>
+</template>
+
+<script>
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+export default {
+  name: 'App',
+  components: {
+    'header-view': Header,
+    'footer-view': Footer
+  }
+}
+
+</script>
+
+<style>
+
+</style>
